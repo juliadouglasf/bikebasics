@@ -6,14 +6,7 @@ body {
 h1 {
   font-family: 'Cabin Sketch';
   color: #15522d;
-  font-size: 13vh; 
-}
-
-.btn {
-  font-family: 'Cabin Sketch';
-  font-size: 6vh;
-  color: #15522d;
-  font-weight: 700;
+  font-size: 7vh; 
 }
 
 .container {
@@ -23,20 +16,32 @@ h1 {
   width: 80%;
   justify-content: center;
   margin: auto;
+  flex-wrap: wrap;
 
   gap: 10px;
 }
 
 .item {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.btn {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
   border: 1;
   border-style: solid;
+  font-family: 'Cabin Sketch';
+  font-size: 4vh;
+  color: #15522d;
   border-color: #15522d;
-  height: 30vh;
-  max-width: 50vh;
-  max-height: 20vh;
+  height: 12vh;
+  width: 400px;
 }
 
 #fix {

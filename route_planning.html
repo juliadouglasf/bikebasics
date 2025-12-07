@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="head">
+  <script>
+    fetch('head.html').then(response => response.text()).then(data => document.getElementById('head').innerHTML = data);
+  </script>
+</div>
+
+<body>
+  <div class="container">
+    <h1>Route planning*</h1>
+    <h2 id="asterisk">*for Ottawa, ON, Canada</h2>
+  </div>
+  <div class="container" id="route_tools">
+    <div class="route_tool">
+      <a href="https://maps.bikeottawa.ca/planner/web/" class="route_tool_text">Bike Ottawa Route Planner (website)</a>
+      <ul>
+        <li>Tune settings (e.g., avoid dark alleys)</li>
+        <li>Export the route map</li>
+        <li>Con: Not designed for phones</li>
+      <ul>
+    </div>
+    <div class="route_tool">
+      <a href="https://play.google.com/store/apps/details?id=com.zeitspace.cyclingapp.cycling_app&hl=en-US&pli=1" class="route_tool_text">Cycling Guide (app)</a>
+      <ul>
+        <li>Shows the relative safety of routes</li>
+        <li>Shows bike parking options</li>
+        <li>App developers action feedback</li>
+        <li>Con: Still in development (e.g., slower loading speed)</li>
+      </ul>
+    </div>
+    <div class="route_tool">
+      <a href="https://transitapp.com/" class="route_tool_text">Transit (app)</a>
+      <ul>
+        <li>Integrates biking with transit: great for long trips</li>
+        <li>Bike-only option</li>
+        <li>Shows the relative safety of routes</li>
+        <li>Loads quickly</li>
+        <li>Con: Often suggests more turns than necessary</li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
